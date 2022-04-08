@@ -50,7 +50,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">get_section_no</span><span class="op">(</span><span class="va">sections</span>, <span class="va">is_rtf</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">get_section_no</span><span class="op">(</span><span class="va">sections</span>, <span class="va">is_rtf</span>, <span class="va">rep_type</span><span class="op">)</span></code></pre></div>
     </div>
 
     <div id="arguments">
@@ -58,7 +58,9 @@
     <dl><dt>sections</dt>
 <dd><p>List of non-scenario report sections</p></dd>
 <dt>is_rtf</dt>
-<dd><p>Flag whether to include sections that are for RTF only</p></dd>
+<dd><p>a flag that triggers several format specific settings:</p><ul><li><p>TRUE: include non-scenario sections (e.g. intro)</p></li>
+<li><p>FALSE: include the links to page top (note requires proper report_version as well)</p></li>
+</ul></dd>
 </dl></div>
     <div id="value">
     <h2>Value</h2>
