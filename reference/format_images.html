@@ -50,7 +50,14 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">format_images</span><span class="op">(</span><span class="va">md_file</span>, <span class="va">image_settings</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">format_images</span><span class="op">(</span>
+  <span class="va">filename</span>,
+  target_width <span class="op">=</span> <span class="fl">7</span>,
+  target_width_units <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"in"</span>, <span class="st">"%"</span><span class="op">)</span>,
+  <span class="va">fix_width</span>,
+  min_pixels_to_rescale <span class="op">=</span> <span class="fl">300</span>,
+  max_height <span class="op">=</span> <span class="fl">4</span>
+<span class="op">)</span></code></pre></div>
     </div>
 
     <div id="arguments">
